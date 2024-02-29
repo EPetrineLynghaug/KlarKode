@@ -1,0 +1,77 @@
+/* Imports */
+
+/* Variables */
+:root {
+    /* https://daisyui.com/docs/colors/ */
+    /* https://rosepinetheme.com/palette/ingredients/ */
+    --primary:           #545454;
+    --primary-content:   #d4d4d4;
+
+    --secondary:         #000;
+    --secondary-content: #000;
+
+    --accent:            #7f7f7f;
+    --accent-content:    #a7a7a7;
+
+    --neutral:           #000;
+    --neutral-content:   #000;
+
+    --base-100:          #000;
+    --base-200:          #000;
+    --base-300:          #000;
+    --base-content:      #000;
+
+    /* States */
+    --info:              #000;
+    --info-content:      #000;
+
+    --success:           #000;
+    --success-content:   #000;
+
+    --warning:           #000;
+    --warning-content:   #000;
+
+    --error:             #000;
+    --error-content:     #000;
+}
+
+/* Global styles */
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.header-row {
+    display: flex;
+    background-color: var(--primary);
+    padding: 10px 5%;
+    width: 100%;
+}
+.header-column {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    
+}
+#header-img {
+    background-color: #000;
+    border: 3px solid black;
+}
+.nav-link {
+    display: flex;
+    margin: 10px 10px;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--primary-content);
+    font-size: 1.2em;
+    transition: ease-in 0.3s;
+}
+.nav-link:hover {
+    color: var(--accent-content);
+}
